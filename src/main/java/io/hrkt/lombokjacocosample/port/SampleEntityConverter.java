@@ -8,7 +8,7 @@ import org.springframework.util.ReflectionUtils;
 import io.hrkt.lombokjacocosample.domain.SampleEntity;
 import io.hrkt.lombokjacocosample.domain.SampleId;
 
-public class SampleEntityConverter {
+public interface SampleEntityConverter {
     public static SampleEntityRep toSampleEntityRep(SampleEntity entity) {
         SampleEntityRep rep = new SampleEntityRep();
         BeanUtils.copyProperties(entity, rep);
