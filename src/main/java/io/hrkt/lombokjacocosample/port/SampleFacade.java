@@ -24,7 +24,7 @@ public class SampleFacade {
     public SampleEntityRep get(String idStr) {
         SampleId id = SampleId.fromString(idStr);
         SampleEntity entity = sampleService.get(id);
-        return SampleEntityConverter.toSampleEntityRep(entity);
+        return null == entity ? null : SampleEntityConverter.toSampleEntityRep(entity);
     }
 
     public void save(SampleEntityRep rep) {
