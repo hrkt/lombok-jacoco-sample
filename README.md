@@ -1,0 +1,1 @@
+# lombok-jacoco-sample
