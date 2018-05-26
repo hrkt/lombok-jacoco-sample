@@ -1,11 +1,18 @@
 package io.hrkt.lombokjacocosample.port;
 
 public class SampleEntityRep {
+    private String id;
     private int intField;
     private long longField;
     private String stringField;
     private char charField;
     private byte byteField;
+    /**
+     * @return the id
+     */
+    public String getId() {
+        return id;
+    }
     /**
      * @return the intField
      */
