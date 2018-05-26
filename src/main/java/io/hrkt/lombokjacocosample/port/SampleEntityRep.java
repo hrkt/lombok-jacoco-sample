@@ -14,6 +14,42 @@ public class SampleEntityRep {
         return id;
     }
     /**
+     * @param id the id to set
+     */
+    public void setId(String id) {
+        this.id = id;
+    }
+    /**
+     * @param intField the intField to set
+     */
+    public void setIntField(int intField) {
+        this.intField = intField;
+    }
+    /**
+     * @param longField the longField to set
+     */
+    public void setLongField(long longField) {
+        this.longField = longField;
+    }
+    /**
+     * @param stringField the stringField to set
+     */
+    public void setStringField(String stringField) {
+        this.stringField = stringField;
+    }
+    /**
+     * @param charField the charField to set
+     */
+    public void setCharField(char charField) {
+        this.charField = charField;
+    }
+    /**
+     * @param byteField the byteField to set
+     */
+    public void setByteField(byte byteField) {
+        this.byteField = byteField;
+    }
+    /**
      * @return the intField
      */
     public int getIntField() {
