@@ -146,5 +146,8 @@ public class SampleEntity {
         this.byteField = byteField;
     }
 
+    public SampleEntity() {
+        super();
+    };
 
 }

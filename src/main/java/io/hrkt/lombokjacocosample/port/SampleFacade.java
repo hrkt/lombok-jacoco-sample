@@ -17,4 +17,10 @@ public class SampleFacade {
         SampleEntity entity = sampleService.get(id);
         return SampleEntityConverter.toSampleEntityRep(entity);
     }
+    
+    public void save(SampleEntityRep rep) {
+        SampleEntity entity = SampleEntityConverter.toSampleEntity(rep);
+        sampleService.save(entity);
+    }
+    
 }

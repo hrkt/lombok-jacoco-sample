@@ -10,4 +10,10 @@ public class SampleEntityConverter {
         BeanUtils.copyProperties(entity, rep);
         return rep;
     }
+
+    public static SampleEntity toSampleEntity(SampleEntityRep rep) {
+        SampleEntity entity = new SampleEntity();
+        BeanUtils.copyProperties(rep, entity);
+        return entity;
+    }
 }

@@ -14,4 +14,7 @@ public class SampleService {
     public SampleEntity get(SampleId id) {
         return sampleEntityRepository.find(id);
     }
+    public void save(SampleEntity entity) {
+        sampleEntityRepository.save(entity);
+    }
 }
